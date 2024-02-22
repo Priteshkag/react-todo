@@ -13,13 +13,16 @@ function App() {
       id: count++,
       title: toDoText
     }
-    if (toDoText == "") {
-      alert("please enter the text..")
-    }
-    else {
+    if (toDoText != "") {
       toDo.push(TodoObject)
       setToDO([...toDo])
     }
+
+    else {
+      alert("please enter the text..")
+
+    }
+
   }
 
   console.log("length of Todo", toDo.length)
